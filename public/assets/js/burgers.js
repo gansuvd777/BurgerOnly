@@ -5,7 +5,7 @@ $(function() {
       event.preventDefault();
   
       var newBurger = {
-        burger_name: $("#burg").val().trim(),
+        burger_name: $("#burger_id").val().trim(),
         devoured: $("[name=devoured]:checked").val().trim()
       };
   
@@ -21,7 +21,6 @@ $(function() {
         }
       );
     });
-  
   
     $(".change-devour").on("click", function(event) {
       var id = $(this).data("id");
@@ -44,5 +43,4 @@ $(function() {
       );
     });
   
-  
-  });
+});

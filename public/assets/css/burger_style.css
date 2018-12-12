@@ -1,23 +1,37 @@
 body {
-    background-image: url("/assets/img/burger.jpg");
+    background-image: url("https://steamusercontent-a.akamaihd.net/ugc/843711846319184507/FA1B093E9F1CB4902EF4DFCF784D6CA82089B46B/");
+    background-size: cover;
 }
-
+h2 {
+    color: white;
+}
 ul {
-  padding: 5px;
-  margin: 5px;
-  background: #ffff99;
+    padding: 10px;
+    margin: 10px;
+    background: lightgrey;
+    width: auto;
+    width: 400px;
 }
 
 .label {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .create-form {
-  padding: 5px;
-  margin: 5px;
-  background: #ffff99;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    width: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: darkblue;
 }
 
 .form-group {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
+}
+.change-devour {
+    color: red;
+    font-weight: bolder;
 }
