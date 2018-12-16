@@ -1,4 +1,4 @@
-<h2 style="text-align:center">Add a Burger</h2>
+<h2 >Add a Burger!!!!! One and Only BURGER!!!</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -16,27 +16,30 @@
 
   <button type="submit">Add Burger 🍔 </button>
 </form>
+<div class="container">
+  <div id="devour_id">
+    <h2>Burgers waiting TO BE DEVOURED</h2>
+    <ul id="ulFirst">
+      {{#each burgers}}
+        {{#unless devoured}}
+          <p>{{id}}. {{burger_name}}
+            <span><button class="change-devour" data-id="{{id}}" data-newdevour=true>
+              {{#if devoured}}devoured!{{else}}devour me!{{/if}}
+            </button></span>
+          </p>
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="devBurg">
+    <h2>DEVOURED Burgers</h2>
 
-<div id="devour_id">
-  <h2>Burgers waiting TO BE DEVOURED</h2>
-  <ul>
-    {{#each burgers}}
-      {{#unless devoured}}
-        <p>{{id}}. {{burger_name}}
-          <span><button class="change-devour" data-id="{{id}}" data-newdevour=true>
-            {{#if devoured}}devoured!{{else}}devour me!{{/if}}
-          </button></span>
-        </p>
-      {{/unless}}
-    {{/each}}
-  </ul>
+      <ul id="ulSecond">
+        {{#each burgers}}
+          {{#if devoured}}
+            <p>{{id}}. {{burger_name}}</p>
+          {{/if}}
+        {{/each}}
+      </ul>
+  </div>
 </div>
-<h2>DEVOURED Burgers</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      <p>{{id}}. {{burger_name}}</p>
-    {{/if}}
-  {{/each}}
-</ul>

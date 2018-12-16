@@ -1,16 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 body {
     background-image: url("https://steamusercontent-a.akamaihd.net/ugc/843711846319184507/FA1B093E9F1CB4902EF4DFCF784D6CA82089B46B/");
     background-size: cover;
 }
 h2 {
     color: white;
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
+    margin: 50px 30px;
 }
+
 ul {
     padding: 10px;
     margin: 10px;
-    background: lightgrey;
+    background: rgb(250, 197, 98);
     width: auto;
-    width: 400px;
+    width: 420px;
+    border-radius: 4px;
+    border: 2px double rgb(250, 197, 98);
+}
+button {
+    border: 1px solid red;
+    color: black;
+    background-color: white;
+    border-radius: 2px;
+    font-weight: bolder;
+}
+button:hover{
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 2s;
 }
 
 .label {
@@ -21,17 +43,39 @@ ul {
     text-align: center;
     padding: 10px;
     margin: 10px;
-    background: white;
+    background: rgb(250, 197, 98);
     width: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
-    color: darkblue;
+    color: rgb(6, 6, 53);
+    width: 420px;
+    border-radius: 4px;
+    border: 2px double rgb(250, 197, 98);
 }
-
+.devBurg{
+    /* float: right; */
+    top: 5%;
+    right: 3%;
+    position: absolute;
+}
 .form-group {
     margin-bottom: 5px;
 }
 .change-devour {
     color: red;
     font-weight: bolder;
+    padding: 3px;
+    margin-left: 5px;
+}
+.change-devour:hover {
+    background-color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 2s;
+}
+p {
+    color: rgb(5, 5, 24);
+    font-size: larger;
+
 }
